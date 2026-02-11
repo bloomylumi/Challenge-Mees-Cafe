@@ -4,6 +4,11 @@ header {
     text-align: center;
 }
 
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
 .container-fluid {
     max-width: 100%;
     background-color: #54a49d;
