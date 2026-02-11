@@ -1,10 +1,12 @@
-.navbar-nav {
-    display: flex;
-    align-items: center;
-}
+/* Begin */
 
 header {
     text-align: center;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
 }
 
 .container-fluid {
