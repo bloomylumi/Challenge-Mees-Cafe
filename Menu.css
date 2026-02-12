@@ -52,9 +52,21 @@
  line-height: 1.6;
 }
 
+
+
+.menu-group {
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 5px;
+}
+
+.menu-item {
+    border: 2px solid black;
+}
+
 @media screen and (min-width: 992px) {
     .menu {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .menu-group {
