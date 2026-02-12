@@ -22,6 +22,36 @@
     padding: 1.5em 0;
 }
 
+.menu-item {
+    display: flex;
+}
+
+.menu-item-image {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+}
+
+.menu-item-text {
+    flex-grow: 1;
+}
+
+.menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.menu-item-name {
+    margin-right: 1.5em;
+}
+
+.menu-item-description {
+ line-height: 1.6;
+}
+
 @media screen and (min-width: 992px) {
     .menu {
         font-size: 16px;
