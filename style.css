@@ -45,3 +45,7 @@ header {
     display: flex;
     justify-content: end;
 }
+
+span {
+    color: yellowgreen; /*kleur kan nog aangepast worden*/
+}
