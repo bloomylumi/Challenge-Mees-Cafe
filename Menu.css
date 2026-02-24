@@ -1,8 +1,38 @@
+ .top-row {
+  display: flex;
+  justify-content: center; /* Use 'flex-start' for left, 'flex-end' for right */
+  gap: 10px;               /* Adds space between buttons */
+  padding: 10px;           /* Adds space around the row */
+}
+
+
+.nav-button {
+    display: inline-block; /* Essential for padding and width */
+    padding: 20px 75px;
+    background-color: darkorchid ;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+ 
+ 
+ 
+ body {
+        background-image: linear-gradient(Beige,LightGrey, Pink); 
+    }
+
+.Logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%; /* Optional: set a width smaller than the container */
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1.5em;
-}
+}   
 
 .menu {
     font-family: sans-serif;
@@ -40,29 +70,24 @@
 
 .menu-item-heading {
     display: flex;
-    justify-content: space-between;
-    margin: 0;
 }
 
 .menu-item-name {
-    margin-right: 1.5em;
+    
+    width: 320px;
 }
 
 .menu-item-description {
  line-height: 1.6;
 }
 
-
-
-.menu-group {
-    border-style: solid;
-    border-width: 1px;
-    margin-bottom: 5px;
-}
-
 .menu-item {
     border: 2px solid black;
+    border-radius: 15px;
+    border-width: thick;
+   
 }
+
 
 @media screen and (min-width: 992px) {
     .menu {
