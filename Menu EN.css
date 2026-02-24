@@ -1,0 +1,100 @@
+ .top-row {
+  display: flex;
+  justify-content: center; /* Use 'flex-start' for left, 'flex-end' for right */
+  gap: 10px;               /* Adds space between buttons */
+  padding: 10px;           /* Adds space around the row */
+}
+
+
+.nav-button {
+    display: inline-block; /* Essential for padding and width */
+    padding: 20px 75px;
+    background-color: darkorchid ;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+ 
+ 
+ 
+ body {
+        background-image: linear-gradient(Beige,LightGrey, Pink); 
+    }
+
+.Logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%; /* Optional: set a width smaller than the container */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+}   
+
+.menu {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+}
+
+.menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+.menu-item {
+    display: flex;
+}
+
+.menu-item-image {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+}
+
+.menu-item-text {
+    flex-grow: 1;
+}
+
+.menu-item-heading {
+    display: flex;
+}
+
+.menu-item-name {
+    
+    width: 320px;
+}
+
+.menu-item-description {
+ line-height: 1.6;
+}
+
+.menu-item {
+    border: 2px solid black;
+    border-radius: 15px;
+    border-width: thick;
+   
+}
+
+
+@media screen and (min-width: 992px) {
+    .menu {
+        font-size: 20px;
+    }
+
+    .menu-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
