@@ -50,12 +50,58 @@ span {
     color: yellowgreen; /*kleur kan nog aangepast worden*/
 }
 
-#map {
-    height: 400px;
-    max-width: 400px;
-    width: 100%;
-    position: relative;
-
+/* Main layout */
+.contact-page-layout {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
 }
+
+/* Columns */
+.left-column, .right-column {
+  flex: 1;
+}
+
+/* Info boxes */
+.info-box, .contact-box {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Contact form */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Map styling */
+.map-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#map {
+  height: 350px;
+  border-radius: 12px;
+}
+
 
 

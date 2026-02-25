@@ -17,7 +17,7 @@
                     <a class="nav-link" href="Home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Producten.html">Producten</a>
+                    <a class="nav-link" href="Menu.html">Menu</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="active" href="Info.html">Info</a>
@@ -25,56 +25,59 @@
             </ul>
         </div>
     </nav>
-    <!--info pagina-->
-    <h1>Contact/info</h1>
-    <p>Hier vind je alle informatie over ons bedrijf, onze diensten en hoe je contact met ons kunt opnemen. We staan altijd klaar om je te helpen!</p>
-    <!--Bezoekadressen-->
-    <div class="bezoekadressen">
-        <h2>Bezoekadres</h2>
-        <p>Wij zijn gevestigd op de volgende locatie:</p>
-        <ul>
-            <li>Locatie: Valkenburgerweg 148, 6419AW Heerlen</li>
-        </ul>
-    </div>
-    <!--Openingstijden-->
-    <div class="openingstijden">
-        <h2>Openingstijden</h2>
-        <p>Onze openingstijden zijn:</p>
-        <ul>
-            <li>Maandag - Vrijdag: 08:00 - 18:00</li>
-            <li>Zaterdag: Gesloten</li>
-            <li>Zondag: Gesloten</li>
-        </ul>
+
+<div class="contact-page-layout">
+
+  <div class="left-column">
+
+    <div class="info-box">
+      <h2>Bezoekadres</h2>
+      <p>Valkenburgerweg 148<br>6419AW Heerlen</p>
     </div>
 
-    <!--Contact formulier-->
-    <div class="contact-container">
-        <h2>Contacteer ons</h2>
-        <p>Wij zijn bereikbaar op de volgende manieren:</p>
-        <ul>
-            <li>Telefoon: 008 - 001 50 00</li>
-            <li>Email: info@meescatering.nl</li>
-        </ul>
-        <p>Heb je vragen of wil je meer informatie? Neem gerust contact met ons op!</p>
-        <form action="#" method="post" class="contact-form">
-            <label for="name">Naam:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Bericht:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Verzenden</button>
-        </form>
+    <div class="info-box">
+      <h2>Openingstijden</h2>
+      <ul>
+        <li>Maandag - Vrijdag: 08:00 - 18:00</li>
+        <li>Zaterdag: Gesloten</li>
+        <li>Zondag: Gesloten</li>
+      </ul>
     </div>
+
+  </div>
+
+  <div class="right-column">
+    <div class="contact-box">
+      <h2>Contacteer ons</h2>
+      <p>Telefoon: 008 - 001 50 00</p>
+      <p>Email: info@meescatering.nl</p>
+
+      <form class="contact-form">
+        <label>Naam</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Bericht</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Verzenden</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<div class="map-container">
+  <h2>Locatie</h2>
+  <div id="map"></div>
+</div>
 
 <!-- Leaflet map library -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-<h2>Locatie</h2>
 <div id="map"></div>
 
 <script>
