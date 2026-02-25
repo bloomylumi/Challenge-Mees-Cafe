@@ -1,4 +1,35 @@
- .top-row {
+
+/* Style the links inside the navigation bar */
+.UK-flag a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.UK-flag a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.UK-flag a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.UK-flag {
+  float: right;
+  position: absolute;
+  top: 0;
+    right: 0;
+}
+
+.top-row {
   display: flex;
   justify-content: center; /* Use 'flex-start' for left, 'flex-end' for right */
   gap: 10px;               /* Adds space between buttons */
