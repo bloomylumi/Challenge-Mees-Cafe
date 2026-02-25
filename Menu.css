@@ -9,7 +9,7 @@
 .nav-button {
     display: inline-block; /* Essential for padding and width */
     padding: 20px 75px;
-    background-color: darkorchid ;
+    background-color: rgb(36, 167, 152) ;
     color: white;
     text-decoration: none;
     border-radius: 5px;
