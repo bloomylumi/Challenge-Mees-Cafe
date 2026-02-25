@@ -49,3 +49,10 @@ header {
 span {
     color: yellowgreen; /*kleur kan nog aangepast worden*/
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+

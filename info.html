@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container-fluid">
@@ -25,13 +26,8 @@
         </div>
     </nav>
     <!--info pagina-->
-    <h1>Info</h1>
+    <h1>Contact/info</h1>
     <p>Hier vind je alle informatie over ons bedrijf, onze diensten en hoe je contact met ons kunt opnemen. We staan altijd klaar om je te helpen!</p>
-    <!--Over ons sectie-->
-    <div class="info-section">
-        <h2>Over ons</h2>
-        <p>Wij zijn een cateringbedrijf dat zich richt op het leveren van <span>hoogwaardige</span> cateringdiensten voor diverse evenementen. Met jarenlange ervaring in de branche, streven we ernaar om onze klanten de <span>beste</span> service en <span>heerlijke</span> gerechten te bieden.</p>
-    </div>
     <!--Bezoekadressen-->
     <div class="bezoekadressen">
         <h2>Bezoekadres</h2>
@@ -53,7 +49,7 @@
 
     <!--Contact formulier-->
     <div class="contact-container">
-        <h1>Contacteer ons</h1>
+        <h2>Contacteer ons</h2>
         <p>Wij zijn bereikbaar op de volgende manieren:</p>
         <ul>
             <li>Telefoon: 008 - 001 50 00</li>
@@ -72,7 +68,27 @@
 
             <button type="submit">Verzenden</button>
         </form>
+    </div>
+
+<!-- Leaflet map library -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<h2>Locatie</h2>
+<div id="map"></div>
+
+<script>
+  // Coordinates (latitude, longitude)
+  var map = L.map('map').setView([50.87971190117579, 5.957358512346055], 13); // MEES Catering, VISTA   
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+  L.marker([50.87965774622429, 5.957401427691656]).addTo(map)
+    .bindPopup("MEES Catering, VISTA")
+    .openPopup();
+</script>
 </body>
+
 <footer>
     <p>&copy; 2026 MEES Catering.</p>
 </footer>
