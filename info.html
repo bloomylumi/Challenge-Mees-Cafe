@@ -26,73 +26,36 @@
         </div>
     </nav>
 
-<div class="contact-page-layout">
+    <section>
+      <h4 class="sectionHeader">Contactgegevens</h4>
+      <h1 class="heading">Neem contact met ons op!</h1>
+      <p class="para">Heb je vragen, opmerkingen of wil je gewoon een praatje maken? We horen graag van je! Neem contact met ons op via de onderstaande gegevens of vul het contactformulier in. We streven ernaar om binnen 24 uur te reageren.</p>
 
-  <div class="left-column">
+      <div class="contactForm">
+        <form action="#">
+          <h1 class="sub-heading">Hulp nodig?</h1>
+          <p class="para para2">
+            Contacteer ons, we helpen je graag verder! Of het nu gaat om vragen over onze menu's, speciale dieetwensen of gewoon een praatje maken over eten, we staan voor je klaar. Vul het formulier in en we nemen zo snel mogelijk contact met je op.
+          </p>
 
-    <div class="info-box">
-      <h2>Bezoekadres</h2>
-      <p>Valkenburgerweg 148<br>6419AW Heerlen</p>
-    </div>
+          <!--formulier-->
+          <input type="text" class="input" placeholder="Naam">
+          <input type="email" class="input" placeholder="Email">
+          <input type="text" class="input" placeholder="Onderwerp">
+          <textarea class="input" cols="30"rows="5" placeholder="Bericht..."></textarea>
+          <button type="submit" class="submit">Verzenden</button>
+        </form>
 
-    <div class="info-box">
-      <h2>Openingstijden</h2>
-      <ul>
-        <li>Maandag - Vrijdag: 08:00 - 18:00</li>
-        <li>Zaterdag: Gesloten</li>
-        <li>Zondag: Gesloten</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="right-column">
-    <div class="contact-box">
-      <h2>Contacteer ons</h2>
-      <p>Telefoon: 008 - 001 50 00</p>
-      <p>Email: info@meescatering.nl</p>
-
-      <form class="contact-form">
-        <label>Naam</label>
-        <input type="text" required>
-
-        <label>Email</label>
-        <input type="email" required>
-
-        <label>Bericht</label>
-        <textarea rows="4"></textarea>
-
-        <button type="submit">Verzenden</button>
-      </form>
-    </div>
-  </div>
-
-</div>
-
-<div class="map-container">
-  <h2>Locatie</h2>
-  <div id="map"></div>
-</div>
-
-<!-- Leaflet map library -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-<div id="map"></div>
-
-<script>
-  // Coordinates (latitude, longitude)
-  var map = L.map('map').setView([50.87971190117579, 5.957358512346055], 13); // MEES Catering, VISTA   
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-
-  L.marker([50.87965774622429, 5.957401427691656]).addTo(map)
-    .bindPopup("MEES Catering, VISTA")
-    .openPopup();
-</script>
+        <div class="map container">
+          <div class="mapBg"></div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10069.474038273294!2d5.947279668114991!3d50.87988958557806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0bdc7aa05ae5b%3A0xb9026263fa8e0a1f!2sVISTA%20college!5e0!3m2!1snl!2snl!4v1772101112136!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 
 <footer>
-    <p>&copy; 2026 MEES Catering.</p>
+  <p>&copy; 2026 MEES Catering.</p>
 </footer>
-</html>
