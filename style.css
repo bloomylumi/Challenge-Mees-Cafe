@@ -50,6 +50,7 @@ span {
     color: yellowgreen; /*kleur kan nog aangepast worden*/
 }
 
+/*voor info.html*/
 body {
   padding-bottom: 5em;
 }
@@ -162,4 +163,7 @@ form{
     max-width: 1100px;
   }
   
+  .contactForm{
+    grid-template-columns: 1fr 1fr;
+  }
 }
