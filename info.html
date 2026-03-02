@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-pagina</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/fa365375a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <img src="https://meescatering.nl/wp-content/uploads/2022/03/logo-mees-catering-black.svg" class="logo" alt="" width="47px" height="47px">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="active" href="Info.html">Info</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--translate optie-->
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {pageLanguage: 'nl'},
+       'google_translate_element'
+      );
+    }
+    </script>
+
+    <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+    <!--einde translate optie-->
+
+    <section>
+      <h4 class="sectionHeader">Contactgegevens</h4>
+      <h1 class="heading">Neem contact met ons op!</h1>
+      <p class="para">Heb je vragen, opmerkingen of wil je gewoon een praatje maken? We horen graag van je! Neem contact met ons op via de onderstaande gegevens of vul het contactformulier in. We streven ernaar om binnen 24 uur te reageren.</p>
+
+      <div class="contactForm">
+        <form action="#">
+          <h1 class="sub-heading">Hulp nodig?</h1>
+          <p class="para para2">
+            Contacteer ons, we helpen je graag verder! Of het nu gaat om vragen over onze menu's, speciale dieetwensen of gewoon een praatje maken over eten, we staan voor je klaar. Vul het formulier in en we nemen zo snel mogelijk contact met je op.
+          </p>
+
+          <!--formulier-->
+          <input type="text" class="input" placeholder="Naam">
+          <input type="email" class="input" placeholder="Email">
+          <input type="text" class="input" placeholder="Onderwerp">
+          <textarea class="input" cols="30"rows="5" placeholder="Bericht..."></textarea>
+          <button type="submit" class="submit">Verzenden</button>
+        </form>
+
+        <div class="map-container">
+          <div class="mapBg"></div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10069.474038273294!2d5.947279668114991!3d50.87988958557806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0bdc7aa05ae5b%3A0xb9026263fa8e0a1f!2sVISTA%20college!5e0!3m2!1snl!2snl!4v1772101112136!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="contactMethod">
+        <div class="method">
+          <i class="fa-solid fa-location-dot contactIcon"></i>
+          <article class="text">
+            <h2 class="sub-heading">Locatie</h2>
+            <p class="para">VISTA College,<br>Valkenburgerweg 148, 6419 AW Heerlen</p>
+        </div>
+
+        <div class="method">
+          <i class="fa-solid fa-clock contactIcon"></i>
+          <article class="text">
+            <h2 class="sub-heading">Openingstijden</h2>
+            <p class="para">Maandag t/m vrijdag:<br>08:00 - 17:00</p>
+        </div>
+
+        <div class="method">
+          <i class="fa-solid fa-envelope contactIcon"></i>
+          <article class="text">
+            <h2 class="sub-heading">Email</h2>
+            <p class="para">info@meescatering.nl</p>
+        </div>
+
+        <div class="method">
+          <i class="fa-solid fa-phone contactIcon"></i>
+          <article class="text">
+            <h2 class="sub-heading">Telefoon</h2>
+            <p class="para">06 12345678</p>
+        </div>
+      </div>
+    </section>
+</body>
+
+<footer>
+  <p>&copy; 2026 MEES Catering.</p>
+</footer>
